@@ -144,3 +144,5 @@ The rollback system will:
 
 ## Contributing
 Contributions are welcome! Please feel free to submit pull requests or open issues for discussion.
+
+Follow **[here](/CONTRIBUTING.md)** for pull request format
