@@ -91,17 +91,14 @@ Based on Slippi architecture:
 
 ### Phase 2: Game Modification
 - [ ] Code Injection Implementation
-  - [ ] Create custom interface in "Dragon Net Battle" section
   - [ ] Implement hook system for Dolphin interaction
+  - [ ] Implement state synchronization hooks
   - [ ] Develop state management interface
 - [ ] Component Restructuring
   - [ ] Implement separated game logic calls
   - [ ] Create rendering pipeline hooks
   - [ ] Develop audio callback management
-- [ ] Interface Development
-  - [ ] Create network battle UI
-  - [ ] Implement state synchronization hooks
-  - [ ] Develop debug interface
+
 
 ### Phase 3: Dolphin Integration
 - [ ] Verify rollback game logic stability
@@ -117,6 +114,45 @@ Based on Slippi architecture:
   - [ ] Optimize state saving
   - [ ] Improve rollback performance
   - [ ] Minimize network overhead
+
+### Prototype rough outline
+```
+## Modded Dolphin Side:
+1. Basic UI
+   - Simple dropdown menus for characters/stage selection
+   - Host/Join buttons
+
+2. Session Flow
+   Host: (p2p protocol)
+   - Pick both chars + stage
+   - Wait for player
+
+   Join: (join with p2p code)
+   - Auto run ping test -> calculate delay/rollback frames
+   - Pick own char
+
+3. When both ready:
+   - Map selections to game's character/stage IDs
+   - Send to game's duel mode function
+   - Jump to combat prepare state
+
+4. During Fight:
+   Normal case:
+   - Run game normally when predictions correct
+
+   When desync/rollback needed:
+   Ideal: 
+   - Run only necessary game logic (requires combat game state to recalculate)
+   - Recalculate with new predicted inputs
+   - Render current frame
+   - Resume
+
+   Fast prototype fallback:
+   - Brute force replay entire game state from wrong input to current frame
+   - Resume
+
+Done!
+```
 
 ## Technical Considerations
 
