@@ -76,10 +76,6 @@ Based on Slippi architecture:
   - [ ] Identify core game mechanics and systems
   - [ ] Map data structures and memory layouts
   - [ ] Document game state management
-- [ ] Code Injection Research
-  - [ ] Analyze "Dragon Net Battle" section
-  - [ ] Identify safe injection points
-  - [ ] Document memory constraints
 - [ ] Component Separation (if they're already separated we can skip this)
   - [ ] Isolate game logic
   - [ ] Separate rendering pipeline
@@ -175,8 +171,12 @@ The rollback system will:
 ## Current Status
 - Reverse engineering: In Progress
 - Code injection research: Not Started
-- Dolphin modification: Planning Phase
+- Dolphin modification: In Progress
 - Netplay implementation: Not Started
+
+
+## Future consideration
+- Training mode through the use of code injection
 
 ## Contributing
 Contributions are welcome! Please feel free to submit pull requests or open issues for discussion.
