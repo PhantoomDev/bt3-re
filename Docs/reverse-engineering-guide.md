@@ -170,7 +170,7 @@ The reverse engineering process combines three main tools:
 !!! Will be continuing the document, currently making example by watching memory address in main menu to figure out: menu functions, target menu pointer address and hopefully some input handler function
 
 ### Example Workflow
-> **Note**: You can do these things out of order, it depends on what you do. This example actually shows me failing a few times and switching methods as I went along (it took us until step 9 tto find anything useful). I recommend to first read through this section before following anything in this part
+> **Note**: You can do these things out of order, it depends on what you do. This example actually shows me failing a few times and switching methods as I went along (it took us until step 9 to find anything useful). I recommend to first read through this section before following anything in this part
 
 1. **Planning Phase**
    - Plan what you want to do. Going in without having an idea about what you’re trying to do will not yield any result.
