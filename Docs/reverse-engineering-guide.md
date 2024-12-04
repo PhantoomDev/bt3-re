@@ -134,6 +134,8 @@ BT3 Wii uses PowerPC Gekko assembly language, which was standard for GameCube sy
 
 ![Debug Environment](images/reverse-engineering/debug-environment/debug-environment.png)
 
+> - **Note:** sometimes you need to unhook and re-hook the memory engine if it is not reading the memory well
+
 ## Debugging and Reverse Engineering
 
 ### Overview
@@ -167,8 +169,8 @@ The reverse engineering process combines three main tools:
 
 !!! Will be continuing the document, currently making example by watching memory address in main menu to figure out: menu functions, target menu pointer address and hopefully some input handler function
 
-### Example Workflow (In Progress)
-> **Note**: You can do these things out of order, it depends on what you do. This example actually shows me failing a few times and switching methods as I go along. I recommend to first read through this section before following anything in this part
+### Example Workflow
+> **Note**: You can do these things out of order, it depends on what you do. This example actually shows me failing a few times and switching methods as I went along (it took us until step 9 tto find anything useful). I recommend to first read through this section before following anything in this part
 
 1. **Planning Phase**
    - Plan what you want to do. Going in without having an idea about what you’re trying to do will not yield any result.
@@ -388,4 +390,34 @@ The reverse engineering process combines three main tools:
    - Continue to the next function
 
 9. **Finding something**
-   - And now we try
+   - We found something!!!
+      - A friend was doing a similar thing on the character select menu and figured out `800b3834` is called every tick in the menu.
+      - After a bit of tracking, he figured out the current character select ID might be `912c6353`.
+   - Immediately I began to look at the memory address and find out more, and boy did we find a lot.
+      - I entered 1P vs 2P team battle character select menu (Since this is the best menu to use entering combat mode with the character data to enter rollback netplay).
+      - Observed the memory in that region while fiddling around with the character selection with both P1 and P2 and ended up with these discovery:
+         ![memory-engine-list](/Docs/images/reverse-engineering/example-workflow/memory-engine-list.png)
+         ![menu-character-select](/Docs/images/reverse-engineering/example-workflow/menu-character-select.png)
+         ![memory-browser-currently-selected-id](/Docs/images/reverse-engineering/example-workflow/memory-browser-currently-selected-id.png)
+         ![memory-browser-p1-team](/Docs/images/reverse-engineering/example-workflow/memory-browser-p1-team.png)
+         
+   - As shown in the image, these different 4 byte and 1 byte data represent a lot of different things and are useful for the begin fight function I plan to directly call from Dolphin after selecting characters in Dolphin (see [readme.md](/readme.md)).
+   - Now that we know these data are being stored here, these data must read and used in a function somewhere to begin the combat game mode. We're going to find it.
+      - On Dolphin debug mode, we can add a memory breakpoint that triggers when the memory of the character ID gets read or written.
+      - We're using write to log only here because these data are apparently being read multiple times per second. If we set it to pause it will just pause every frame and we won't be able to do anything
+         > Log under **View** in toolbar
+
+         [breakpoint setting image here]
+
+         > In Log Configuration make sure to toggle all log type
+      - After picking the stage and music and pressing ready, the game will start loading. Here is where we will look at the log, bingo!
+         ![character-id-memory-breakpoint-log](/Docs/images/reverse-engineering/example-workflow/character-id-memory-breakpoint-log.png)
+         > - Here we can see among the repetitive call of `800b33e4` at the end we have one instruction address that is unique `800b7488` that is also immediately overwritten afterwards (I checked and the data is almost certainly gibberish in memory:`85f0f783`) 
+         - Just to confirm I will do the same thing with the other character IDs, color ID, map ID, music ID, etc.
+         - `800b7488` executed 4 times, it read the character ID of all the characters that are in team P1 and team P2. This is a character loader.
+         - Next is to follow the trail and find more things useful (target: combat loader function)
+
+10. **Continue**
+   - That's it! That's the idea of reverse engineering, we just keep finding stuff we're interested in that we could understand more and use through either force execute through Dolphin or we can change the game through code injection (will make a doc when the time comes and if we need it)
+   - For now we will continue to find more memory address, game state value, combat related logic functions that we can use for the rollback logic I wrote in the modded Dolphin emulator that's still in progress.
+   - Look at the [readme](/readme.md) to see what is needed and just find stuff.

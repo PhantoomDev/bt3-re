@@ -1,0 +1,8 @@
+80008d10 - ?menu_transition_val_clamp
+
+800b3834 - ???? Called every frame in character select menu
+
+802065ac - ?set_menu_transition_flag
+
+
+
