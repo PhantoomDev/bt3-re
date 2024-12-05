@@ -365,7 +365,7 @@
                                     "unsigned": false
                                 }
                             ],
-                            "groupName": "Cusors"
+                            "groupName": "Cursors"
                         },
                         {
                             "address": "912C65D8",
@@ -489,32 +489,170 @@
             "expanded": true,
             "groupEntries": [
                 {
-                    "address": "803CF784",
-                    "baseIndex": 0,
-                    "label": "P1 Char 1 ID",
-                    "typeIndex": 2,
-                    "unsigned": false
+                    "expanded": true,
+                    "groupEntries": [
+                        {
+                            "address": "803CF780",
+                            "baseIndex": 0,
+                            "label": "P1 Number of Char",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        },
+                        {
+                            "address": "803CF784",
+                            "baseIndex": 0,
+                            "label": "P1 Char 1 ID",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        },
+                        {
+                            "address": "803CF788",
+                            "baseIndex": 0,
+                            "label": "P1 Char 1 color",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        },
+                        {
+                            "address": "803CF7E8",
+                            "baseIndex": 0,
+                            "label": "P1 Char 2 ID",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        },
+                        {
+                            "address": "803CF7EC",
+                            "baseIndex": 0,
+                            "label": "P1 Char 2 color",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        },
+                        {
+                            "address": "803CF84C",
+                            "baseIndex": 0,
+                            "label": "P1 Char 3 ID",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        },
+                        {
+                            "address": "803CF850",
+                            "baseIndex": 0,
+                            "label": "P1 Char 3 color",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        },
+                        {
+                            "address": "803CF8B0",
+                            "baseIndex": 0,
+                            "label": "P1 Char 4 ID",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        },
+                        {
+                            "address": "803CF8B4",
+                            "baseIndex": 0,
+                            "label": "P1 Char 4 color",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        },
+                        {
+                            "address": "803CF914",
+                            "baseIndex": 0,
+                            "label": "P1 Char 5 ID",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        },
+                        {
+                            "address": "803CF918",
+                            "baseIndex": 0,
+                            "label": "P1 Char 5 color",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        }
+                    ],
+                    "groupName": "P1"
                 },
                 {
-                    "address": "803CF788",
-                    "baseIndex": 0,
-                    "label": "P1 Char 1 color",
-                    "typeIndex": 2,
-                    "unsigned": false
-                },
-                {
-                    "address": "803CF7E8",
-                    "baseIndex": 0,
-                    "label": "P1 Char 2 ID",
-                    "typeIndex": 2,
-                    "unsigned": false
-                },
-                {
-                    "address": "803CF7EC",
-                    "baseIndex": 0,
-                    "label": "P1 Char 2  color",
-                    "typeIndex": 2,
-                    "unsigned": false
+                    "expanded": true,
+                    "groupEntries": [
+                        {
+                            "address": "803CF9F0",
+                            "baseIndex": 0,
+                            "label": "P2 Number of Char",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        },
+                        {
+                            "address": "803CF9F4",
+                            "baseIndex": 0,
+                            "label": "P2 Char 1 ID",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        },
+                        {
+                            "address": "803CF9F8",
+                            "baseIndex": 0,
+                            "label": "P2 Char 1 color",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        },
+                        {
+                            "address": "803CFA58",
+                            "baseIndex": 0,
+                            "label": "P2 Char 2 ID",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        },
+                        {
+                            "address": "803CFA5C",
+                            "baseIndex": 0,
+                            "label": "P2 Char 2 color",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        },
+                        {
+                            "address": "803CFABC",
+                            "baseIndex": 0,
+                            "label": "P2 Char 3 ID",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        },
+                        {
+                            "address": "803CFAC0",
+                            "baseIndex": 0,
+                            "label": "P2 Char 3 color",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        },
+                        {
+                            "address": "803CFB20",
+                            "baseIndex": 0,
+                            "label": "P2 Char 4 ID",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        },
+                        {
+                            "address": "803CFB24",
+                            "baseIndex": 0,
+                            "label": "P2 Char 4 color",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        },
+                        {
+                            "address": "803CFB84",
+                            "baseIndex": 0,
+                            "label": "P2 Char 5 ID",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        },
+                        {
+                            "address": "803CFB88",
+                            "baseIndex": 0,
+                            "label": "P2 Char 5 color",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        }
+                    ],
+                    "groupName": "P2"
                 }
             ],
             "groupName": "Character Loader 1"
