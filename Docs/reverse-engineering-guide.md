@@ -396,6 +396,7 @@ The reverse engineering process combines three main tools:
    - Immediately I began to look at the memory address and find out more, and boy did we find a lot.
       - I entered 1P vs 2P team battle character select menu (Since this is the best menu to use entering combat mode with the character data to enter rollback netplay).
       - Observed the memory in that region while fiddling around with the character selection with both P1 and P2 and ended up with these discovery:
+      
          ![memory-engine-list](/Docs/images/reverse-engineering/example-workflow/memory-engine-list.png)
          ![menu-character-select](/Docs/images/reverse-engineering/example-workflow/menu-character-select.png)
          ![memory-browser-currently-selected-id](/Docs/images/reverse-engineering/example-workflow/memory-browser-currently-selected-id.png)

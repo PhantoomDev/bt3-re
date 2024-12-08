@@ -18,6 +18,48 @@
             "expanded": true,
             "groupEntries": [
                 {
+                    "address": "8063FD10",
+                    "baseIndex": 0,
+                    "label": "Language tmp storage",
+                    "typeIndex": 2,
+                    "unsigned": false
+                },
+                {
+                    "address": "9111D76B",
+                    "baseIndex": 0,
+                    "label": "Language in option",
+                    "typeIndex": 0,
+                    "unsigned": true
+                },
+                {
+                    "address": "90E5A768",
+                    "baseIndex": 0,
+                    "label": "Language (0 JP, 1 ENG)",
+                    "typeIndex": 2,
+                    "unsigned": true
+                },
+                {
+                    "address": "90E5A808",
+                    "baseIndex": 0,
+                    "label": "Music Volume",
+                    "typeIndex": 2,
+                    "unsigned": false
+                },
+                {
+                    "address": "90E5A80C",
+                    "baseIndex": 0,
+                    "label": "Voice Volume",
+                    "typeIndex": 2,
+                    "unsigned": false
+                }
+            ],
+            "groupName": "Sound"
+        },
+        {
+            "expanded": true,
+            "groupEntries": [
+                {
+                    "expanded": true,
                     "groupEntries": [
                         {
                             "groupEntries": [
@@ -146,17 +188,17 @@
                             "groupName": "Cursors"
                         },
                         {
-                            "address": "912C6350",
+                            "address": "912C634C",
                             "baseIndex": 0,
-                            "label": "P1 Char select ID",
+                            "label": "P1 Number of Char",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
-                            "address": "912C634F",
-                            "baseIndex": 0,
-                            "label": "P1 Number of Char",
-                            "typeIndex": 0,
+                            "address": "912C6350",
+                            "baseIndex": 1,
+                            "label": "P1 Char select ID",
+                            "typeIndex": 2,
                             "unsigned": false
                         },
                         {
@@ -167,10 +209,10 @@
                             "unsigned": false
                         },
                         {
-                            "address": "912C6233",
+                            "address": "912C6230",
                             "baseIndex": 0,
                             "label": "P1 Char 1 Color",
-                            "typeIndex": 0,
+                            "typeIndex": 2,
                             "unsigned": false
                         },
                         {
@@ -181,10 +223,10 @@
                             "unsigned": false
                         },
                         {
-                            "address": "912C6263",
+                            "address": "912C6260",
                             "baseIndex": 0,
                             "label": "P1 Char 2 Color",
-                            "typeIndex": 0,
+                            "typeIndex": 2,
                             "unsigned": false
                         },
                         {
@@ -195,10 +237,10 @@
                             "unsigned": false
                         },
                         {
-                            "address": "912C6293",
+                            "address": "912C6290",
                             "baseIndex": 0,
                             "label": "P1 Char 3 Color",
-                            "typeIndex": 0,
+                            "typeIndex": 2,
                             "unsigned": false
                         },
                         {
@@ -209,10 +251,10 @@
                             "unsigned": false
                         },
                         {
-                            "address": "912C62C3",
+                            "address": "912C62C0",
                             "baseIndex": 0,
                             "label": "P1 Char 4 Color",
-                            "typeIndex": 0,
+                            "typeIndex": 2,
                             "unsigned": false
                         },
                         {
@@ -223,23 +265,24 @@
                             "unsigned": false
                         },
                         {
-                            "address": "912C62F3",
+                            "address": "912C62F0",
                             "baseIndex": 0,
                             "label": "P1 Char 5 Color",
-                            "typeIndex": 0,
+                            "typeIndex": 2,
                             "unsigned": false
                         },
                         {
-                            "address": "912C6347",
+                            "address": "912C6344",
                             "baseIndex": 0,
                             "label": "P1 Team Select Cursor",
-                            "typeIndex": 0,
+                            "typeIndex": 2,
                             "unsigned": false
                         }
                     ],
                     "groupName": "P1"
                 },
                 {
+                    "expanded": true,
                     "groupEntries": [
                         {
                             "groupEntries": [
@@ -368,17 +411,17 @@
                             "groupName": "Cursors"
                         },
                         {
-                            "address": "912C65D8",
+                            "address": "912C65D4",
                             "baseIndex": 0,
-                            "label": "P2 Char select ID",
+                            "label": "P2 Number of Char",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
-                            "address": "912C65D7",
+                            "address": "912C65D8",
                             "baseIndex": 0,
-                            "label": "P2 Number of Char",
-                            "typeIndex": 0,
+                            "label": "P2 Char select ID",
+                            "typeIndex": 2,
                             "unsigned": false
                         },
                         {
@@ -389,10 +432,10 @@
                             "unsigned": false
                         },
                         {
-                            "address": "912C64BB",
+                            "address": "912C64B8",
                             "baseIndex": 0,
                             "label": "P2 Char 1 Color",
-                            "typeIndex": 0,
+                            "typeIndex": 2,
                             "unsigned": false
                         },
                         {
@@ -403,10 +446,10 @@
                             "unsigned": false
                         },
                         {
-                            "address": "912C64EB",
+                            "address": "912C64E8",
                             "baseIndex": 0,
                             "label": "P2 Char 2 Color",
-                            "typeIndex": 0,
+                            "typeIndex": 2,
                             "unsigned": false
                         },
                         {
@@ -417,10 +460,10 @@
                             "unsigned": false
                         },
                         {
-                            "address": "912C651B",
+                            "address": "912C6518",
                             "baseIndex": 0,
                             "label": "P2 Char 3 Color",
-                            "typeIndex": 0,
+                            "typeIndex": 2,
                             "unsigned": false
                         },
                         {
@@ -431,10 +474,10 @@
                             "unsigned": false
                         },
                         {
-                            "address": "912C654B",
+                            "address": "912C6548",
                             "baseIndex": 0,
                             "label": "P2 Char 4 Color",
-                            "typeIndex": 0,
+                            "typeIndex": 2,
                             "unsigned": false
                         },
                         {
@@ -445,17 +488,17 @@
                             "unsigned": false
                         },
                         {
-                            "address": "912C657B",
+                            "address": "912C6578",
                             "baseIndex": 0,
                             "label": "P2 Char 5 Color",
-                            "typeIndex": 0,
+                            "typeIndex": 2,
                             "unsigned": false
                         },
                         {
-                            "address": "912C65CF",
+                            "address": "912C65CC",
                             "baseIndex": 0,
                             "label": "P2 Team Select Cursor",
-                            "typeIndex": 0,
+                            "typeIndex": 2,
                             "unsigned": false
                         }
                     ],
