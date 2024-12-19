@@ -47,7 +47,7 @@ BT3 Wii uses PowerPC Gekko assembly language, which was standard for GameCube sy
 1. Select the game in the Dolphin browser menu, right-click and select "Properties"
 2. Go to the "Filesystem" tab (on the far right)
 
-![Filesystem tab](Images/reverse-engineering/getting-started/Filesystem.png)
+![Filesystem tab](images/reverse-engineering/getting-started/Filesystem.png)
 
 3. Right-click the Disc on top and select "Extract entire Disc..." and extract the content to a folder (Don't extract it in the Git folder, this is your testing environment)
 4. Navigate to `DATA/sys/` in the extracted folder to find `main.dol` - this is the game's code we'll be working with
