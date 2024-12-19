@@ -94,16 +94,19 @@ BT3 Wii uses PowerPC Gekko assembly language, which was standard for GameCube sy
 
 ### Dolphin Memory Engine Setup
 
-1. Clone and build from [GitHub repository](https://github.com/aldelaro5/dolphin-memory-engine)
+1. Clone and build from [this GitHub repository](https://github.com/aldelaro5/dolphin-memory-engine)
+- follow “How to Build”
 
 > **Windows Build Note**: If you encounter the CRT_SECURE warning, add `#define _CRT_SECURE_NO_WARNINGS` at the beginning of the offending code.
 
-2. Build in Release mode for better performance
-3. Find the executable at `Source\bin\Release\dolphin-memory-engine.exe`
+   - Build in Release mode for better performance
+   - Find the executable at `Source\bin\Release\dolphin-memory-engine.exe`
 
 ![Memory Engine Location](images/reverse-engineering/debug-environment/memory-engine-location.png)
 
-4. Run alongside Dolphin debug mode for complete debugging environment
+   - If you use Linux or OSX you probably know what you’re doing and how to fix them but just in case, feel free to mention any problem and add them here
+
+2. Run alongside Dolphin debug mode for complete debugging environment
 
 ![Debug Environment](images/reverse-engineering/debug-environment/debug-environment.png)
 
