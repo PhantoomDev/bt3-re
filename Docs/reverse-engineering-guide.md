@@ -54,7 +54,7 @@ BT3 Wii uses PowerPC Gekko assembly language, which was standard for GameCube sy
 
 ![Main DOL Location](images/reverse-engineering/getting-started/main-dol-location.png)
 
-### Decompiling the DOL File
+### Setting up Ghidra
 
 1. Set up Ghidra:
 - Due to how Ghidra handles user-specific paths and permissions within the project files, we need to import and export the project as an archive file (.gar)
