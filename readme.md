@@ -45,8 +45,7 @@ The goal is to learn and grow together. Not everyone starts as an expert documen
 ## Technical Architecture
 
 ### Game Modifications
-- Utilizing unused "Dragon Net Battle" section as entry point for code injection
-- Implementing interface for netplay battle (duel interface with rollback hooks)
+- Implementing interface for netplay battle (duel mode with rollback hooks)
 - Separating core components:
   - Game logic
   - Rendering pipeline
