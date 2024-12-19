@@ -1,0 +1,11 @@
+{
+    "watchList": [
+        {
+            "address": "8062ADC8",
+            "baseIndex": 0,
+            "label": "??IOS_SyncFlag_80_0",
+            "typeIndex": 0,
+            "unsigned": false
+        }
+    ]
+}
