@@ -57,16 +57,25 @@ BT3 Wii uses PowerPC Gekko assembly language, which was standard for GameCube sy
 ### Decompiling the DOL File
 
 1. Set up Ghidra:
-   - Create a new project (or open existing project "BT3 rollback.gpr")
-   - Import the DOL file
-   - Select PowerPC, 32, big Endian and default compiler for the language variant
+- Due to how Ghidra handles user-specific paths and permissions within the project files, we need to import and export the project as an archive file (.gar)
+- To import in Ghidra via: 
+   - elect File > Restore Project
+   - Select "BT3 rollback.gar" as the Archive File
+   - Select a directory outside of the git folder for the Restore Directory (this will be your Ghidra workspace)
 
-![Ghidra Setup](images/reverse-engineering/getting-started/ghidra-setup-1.png)
-![Ghidra Language Selection](images/reverse-engineering/getting-started/ghidra-setup-2.png)
+![Ghidra Restore](images/reverse-engineering/getting-started/ghidra-restore.png)
 
-2. Open main.dol and run the initial analysis when prompted
+- Select main.dol. You should now see this:
 
 ![Ghidra Analysis](images/reverse-engineering/getting-started/ghidra-analysis.png)
+
+- To export the project after you made any sort of editing:
+   - Select File > Archive Current Project 
+   - Make sure to name it "BT3 rollback.gar" and in the same directory so it rewrites to update.
+
+- For anyone interested, this is the language settings used for decompilation
+
+![Ghidra Language Selection](images/reverse-engineering/getting-started/ghidra-language.png)
 
 ## Setting Up Debug Environment
 
