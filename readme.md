@@ -3,6 +3,35 @@
 ## Overview
 This project aims to implement rollback netcode for Dragon Ball Z: Budokai Tenkaichi 3 (BT3) through reverse engineering and modifying Dolphin emulator. The primary focus is on implementing split-screen rollback netplay to facilitate debugging, input verification, and maintain consistency with local play experience.
 
+## Open Knowledge, No Gatekeeping
+
+**Important**: This project explicitly rejects gatekeeping and "insider knowledge" culture that has historically hindered BT3's modding scene. If you're someone who hoards knowledge or refuses to share information to maintain some perceived advantage or status - this project is NOT for you. 
+
+What we stand for:
+- Open collaboration and knowledge sharing
+- Documentation of ALL findings and techniques
+- Helping newcomers learn and contribute
+- Building a sustainable, growing modding community
+
+What we don't tolerate:
+- Gatekeeping information
+- Refusing to explain techniques or discoveries
+- Creating artificial barriers for new contributors
+- "I know something you don't know" attitudes
+
+This project aims to revitalize BT3's modding scene through open collaboration. If you're not on board with this philosophy, please find another project. We're here to build something for everyone, not to stroke egos.
+
+### What This Means in Practice
+- Share and document your discoveries
+- Make a good faith effort to comment and explain your code
+- Share techniques when you understand them
+- Welcome questions and help others learn
+- Value all contributions, regardless of experience level
+- Encourage and support new contributors
+- If you're not great at documentation/commenting, that's okay - just try your best and others can help
+
+The goal is to learn and grow together. Not everyone starts as an expert documenter or explainer, but we can all work towards building a more open and helpful community.
+
 ## Prerequisites
 - [DBZ BT3 Widescreen Tournament ISO 2.1 (Wii)](https://docs.google.com/document/d/1v6EnaYr624Dz-MyNXEdFoJ5FKPLhvAWD08rmHATL3uc/edit?tab=t.0#heading=h.uicrin9d2ldj) - European Version (20% faster)
 - Dolphin Emulator 5.0 or later (for reference/forking/debugging)
@@ -128,37 +157,6 @@ The rollback system will:
 
 ## Contributing
 Contributions are welcome! Please feel free to submit pull requests or open issues for discussion.
-
-
-## Open Knowledge, No Gatekeeping
-
-**Important**: This project explicitly rejects gatekeeping and "insider knowledge" culture that has historically hindered BT3's modding scene. If you're someone who hoards knowledge or refuses to share information to maintain some perceived advantage or status - this project is NOT for you. 
-
-What we stand for:
-- Open collaboration and knowledge sharing
-- Documentation of ALL findings and techniques
-- Helping newcomers learn and contribute
-- Building a sustainable, growing modding community
-
-What we don't tolerate:
-- Gatekeeping information
-- Refusing to explain techniques or discoveries
-- Creating artificial barriers for new contributors
-- "I know something you don't know" attitudes
-
-This project aims to revitalize BT3's modding scene through open collaboration. If you're not on board with this philosophy, please find another project. We're here to build something for everyone, not to stroke egos.
-
-### What This Means in Practice
-- Share and document your discoveries
-- Make a good faith effort to comment and explain your code
-- Share techniques when you understand them
-- Welcome questions and help others learn
-- Value all contributions, regardless of experience level
-- Encourage and support new contributors
-- If you're not great at documentation/commenting, that's okay - just try your best and others can help
-
-The goal is to learn and grow together. Not everyone starts as an expert documenter or explainer, but we can all work towards building a more open and helpful community.
-
 
 ## Resources
 - [GGPO Documentation](https://github.com/pond3r/ggpo)
