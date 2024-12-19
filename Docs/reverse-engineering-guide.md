@@ -74,9 +74,12 @@ BT3 Wii uses PowerPC Gekko assembly language, which was standard for GameCube sy
    - Select File > Archive Current Project 
    - Make sure to name it "BT3 rollback.gar" and in the same directory so it rewrites to update.
 
-- For anyone interested, this is the language settings used for decompilation
+- > **Note:** For anyone interested, Ghidra doesn't include Wii language decompilation by default, you need to get it [here](https://github.com/Cuyler36/Ghidra-GameCube-Loader/releases). Do not follow any of the instructions in the repo, (it's a lie and it will cost you precious time) instead, download the .zip file and move it under `Extension/Ghidra/` with all the other .zip extensions that came in by default. Once you do that, you can install that extension (don't worry about it being red) and you will have this option when importing the .dol file.
 
-![Ghidra Language Selection](images/reverse-engineering/getting-started/ghidra-language.png)
+   ![Ghidra Extension](images/reverse-engineering/getting-started/ghidra-extension.png)
+
+   ![Ghidra Language](images/reverse-engineering/getting-started/ghidra-wii-language.png)
+
 
 ## Setting Up Debug Environment
 
