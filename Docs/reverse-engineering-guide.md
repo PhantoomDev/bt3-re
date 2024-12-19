@@ -44,7 +44,6 @@ BT3 Wii uses PowerPC Gekko assembly language, which was standard for GameCube sy
 ## Getting Started
 
 ### Extract the DOL File from the ISO
-### Attention! I completely forgot to deal with the update partition, will figure out a way to merge it into a single .dol so modifying and code injection is possible, currently looking for a way to merge them
 
 1. Select the game in the Dolphin browser menu, right-click and select "Properties"
 2. Go to the "Filesystem" tab (on the far right)
