@@ -62,7 +62,7 @@ Based on Slippi architecture:
 
 ## Project Roadmap
 
-[Get Started here](Instructions)
+[Get Started here](Docs/reverse-engineering-guide.md)
 
 ### Phase 1: Reverse Engineering
 - [ ] Game Logic Analysis

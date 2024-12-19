@@ -23,7 +23,7 @@ Basic C programming knowledge is required. While you don't need to be an expert,
 
 (Feel free to download them as you go along, as some steps might not be needed)
 
-1. Ghidra 11.2.1 for code decompilation
+1. [Ghidra](https://ghidra-sre.org) 11.2.1 for code decompilation
 2. Dolphin 5.0 for game emulation, extracting game file and improved debug mode
 3. [Dolphin Memory Engine](https://github.com/aldelaro5/dolphin-memory-engine)
 
