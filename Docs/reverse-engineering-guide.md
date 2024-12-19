@@ -59,7 +59,7 @@ BT3 Wii uses PowerPC Gekko assembly language, which was standard for GameCube sy
 1. Set up Ghidra:
 - Due to how Ghidra handles user-specific paths and permissions within the project files, we need to import and export the project as an archive file (.gar)
 - To import in Ghidra via: 
-   - elect File > Restore Project
+   - Select File > Restore Project
    - Select "BT3 rollback.gar" as the Archive File
    - Select a directory outside of the git folder for the Restore Directory (this will be your Ghidra workspace)
 
