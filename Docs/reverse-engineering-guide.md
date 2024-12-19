@@ -57,29 +57,39 @@ BT3 Wii uses PowerPC Gekko assembly language, which was standard for GameCube sy
 
 ### Setting up Ghidra
 
-1. Set up Ghidra:
-- Due to how Ghidra handles user-specific paths and permissions within the project files, we need to import and export the project as an archive file (.gar)
-- To import in Ghidra via: 
-   - Select File > Restore Project
-   - Select "BT3 rollback.gar" as the Archive File
-   - Select a directory outside of the git folder for the Restore Directory (this will be your Ghidra workspace)
+1. Set up Ghidra Gamecube Binary Loader
 
-![Ghidra Restore](images/reverse-engineering/getting-started/ghidra-restore.png)
+   - Ghidra doesn't include Wii language decompilation by default, you need to get it [here](https://github.com/Cuyler36/Ghidra-GameCube-Loader/releases). Do not follow any of the instructions in the repo, (it's a lie and it will cost you precious time) instead, download the .zip file and move it under `Extension/Ghidra/` with all the other .zip extensions that came in by default.
 
-- Select main.dol. You should now see this:
+   - Once you do that, you can install that extension (don't worry about it being red) and you will have this option when importing the .dol file.
 
-![Ghidra Analysis](images/reverse-engineering/getting-started/ghidra-analysis.png)
+      ![Ghidra Extension](images/reverse-engineering/getting-started/ghidra-extension.png)
 
-- To export the project after you made any sort of editing:
-   - Select File > Archive Current Project 
-   - Make sure to name it "BT3 rollback.gar" and in the same directory so it rewrites to update.
+      ![Ghidra Language](images/reverse-engineering/getting-started/ghidra-wii-language.png)
 
-- > **Note:** For anyone interested, Ghidra doesn't include Wii language decompilation by default, you need to get it [here](https://github.com/Cuyler36/Ghidra-GameCube-Loader/releases). Do not follow any of the instructions in the repo, (it's a lie and it will cost you precious time) instead, download the .zip file and move it under `Extension/Ghidra/` with all the other .zip extensions that came in by default. Once you do that, you can install that extension (don't worry about it being red) and you will have this option when importing the .dol file.
+2. Import and export Ghidra files
 
-   ![Ghidra Extension](images/reverse-engineering/getting-started/ghidra-extension.png)
+   - Due to how Ghidra handles user-specific paths and permissions within the project files, we need to import and export the project as an archive file (.gar)
+   - To import in Ghidra via: 
+      - Select File > Restore Project
+      - Select "BT3 rollback.gar" as the Archive File
+      - Select a directory outside of the git folder for the Restore Directory (this will be your Ghidra workspace)
 
-   ![Ghidra Language](images/reverse-engineering/getting-started/ghidra-wii-language.png)
+      ![Ghidra Restore](images/reverse-engineering/getting-started/ghidra-restore.png)
 
+   - Select main.dol. You should now see this:
+
+      ![Ghidra Analysis](images/reverse-engineering/getting-started/ghidra-analysis.png)
+
+   - To export the project after you made any sort of editing:
+      - Select File > Archive Current Project 
+      - Make sure to name it "BT3 rollback.gar" and in the same directory so it rewrites to update.
+
+   > **Note:** Ghidra is stupid sometimes, it will show you a value that seems different from the code you see in dolphin that's being run. But most of the time it is because it shows it incorrectly:
+   >  -  Instead of `0x8056`, it shows `-0x7faa` in the same address and same instruction. This is because:
+   >     - -0x7faa in binary: 1000 0000 0101 0110
+   >     - 0x8056 in binary:  1000 0000 0101 0110
+   >  - Some values are actually equivalent in binary so be careful
 
 ## Setting Up Debug Environment
 
@@ -153,9 +163,6 @@ The reverse engineering process combines three main tools:
      - Sound call system
      - Input handling
 
-4. **Labeling rule**
-   - Follow the uncertainty-level label rule as shown [here](Docs\images\label-rule.md)
-
 !!! Will be continuing the document, currently making example by watching memory address in main menu to figure out: menu functions, target menu pointer address and hopefully some input handler function
 
 ### Example Workflow (In Progress)
@@ -177,7 +184,7 @@ The reverse engineering process combines three main tools:
 
    >**Tip:** Rejoice, we live in an era where we can ask specific instruction pattern and get answer from LLMs (ChatGPT and the likes) to easily analyze parts of a list of instruction. Feel free to do so!
  
-   - When I start pressing Step, the instruction would execute and continue. The current process cycle is highlighted in green, as I do so I realized that the instructions are looping within the three instruction marked in red.
+   - When I start pressing Step, the instruction would execute and continue. The current **Processing Cycle (PC)** is highlighted in green, as I do so I realized that the instructions are looping within the three instruction marked in red.
 
    ![Main Menu Code](images/reverse-engineering/example-workflow/main-menu-loop.png)
 
@@ -231,9 +238,17 @@ The reverse engineering process combines three main tools:
    - So the 3 instruction loop is most likely just a hardware status sync check of some form, meaning going back to the initial 3 instruction loop can be assumed as some form of hardware sync check and what happens afterwords is the actual game instructions.
    - I can label this memory as `??IOS_SyncFlag_80_0` for the moment and try to determine the rest of the instructions after this 3 instruction sync check.
 
-5. **Following the code**
+5. **Dolphin Memory Watch File**
+   - Dolphin memory engine has a way to open and save memory address watch list.
+   - For the sake of not having to keep relabeling memory and easily check through different section of the game, we can save the current watch list as a file and later open them under `File > Save` or `File > Open`.
+   - Save and open this file under [this directory](/DMW/) and follow the [labeling-rule](/DMW/label-rule.md) for easy understanding.
+
+6. **Following the code**
    - At certain points I will have to simply follow the instruction path and not just using "Step" or repeatedly "Pause" and "Play" since eventually it will be a bit too luck based.
    - For this scenario I will attempt to follow the original 3 instruction loop and see what happens from there and record as many memory address that gets read or written until I either:
-      - circle back to a loop (a safe assumption to make since in this situation in some way the processing cycle always returns back to the `8021ADC` processing address) or
-      - if somewhere down the line I got lost.
-   
+      - circle back to a loop (a safe assumption to make since in this situation in some way the Processing Cycle always returns back to the `8021ADC` processing address) or
+      - if somewhere down the line I got lost in the huge pile of code.
+   - At this point I'm going to be looking at Ghidra's decompilation window from time to time to make things easier for me, I can simply copy the address of the current Processing Cycle address find the same code address in Ghidra.
+      - In Ghidra by pressing the **G** key we can bring up a search that can take us directly to an address instead of scrolling up and down.
+
+   - With any luck, I could simply look at the decompiled code and hopefully intuit what the code does.
