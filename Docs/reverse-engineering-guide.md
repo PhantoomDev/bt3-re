@@ -155,3 +155,22 @@ The reverse engineering process combines three main tools:
 
 ![Save State Example](images/reverse-engineering/example-workflow/save-state-example.png)
 
+3. **Start and pause**
+   - I begin by just entering the main menu and hit pause to see what codes are running
+
+![Main Menu](images/reverse-engineering/example-workflow/main-menu.png)
+
+   - When I start pressing Step, the instruction would execute and continue. The current cycle is highlighted in green, as I do so I realized that the instructions are looping within the three instruction marked in red.
+
+![Main Menu Code](images/reverse-engineering/example-workflow/main-menu-loop.png)
+
+```
+80210adc lwz r0, -0x6558 (r13)   # Loads a word from memory address (r13 - 0x6558) into r0
+80210ae0 cmpwi r0, 0             # Compares r0 with 0
+8021ae4 beq+ ->0x80210ADC        # Branch if equal (r0 == 0) back to the first instruction
+```
+
+-  This is a loop:
+   1. First, it loads some value from memory (offset -0x6558 from whatever r13 points to) into r0
+   2. Then it compares that value with 0
+   3. If the value is 0, it branches back to the start (note the branch target 0x80210ADC matches the address of the first instruction)
