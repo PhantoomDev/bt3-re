@@ -1,7 +1,11 @@
-# Dragon Ball Z: Budokai Tenkaichi 3 Rollback Netcode Implementation
+# Dragon Ball Z: Budokai Tenkaichi 3 Reverse-engineering (Rollback Netcode Implementation)
 
 ## Overview
-This project aims to implement rollback netcode for Dragon Ball Z: Budokai Tenkaichi 3 (BT3) through reverse engineering and modifying Dolphin emulator. The primary focus is on implementing split-screen rollback netplay to facilitate debugging, input verification, and maintain consistency with local play experience.
+This repository works in tandem with a [modded Dolphin emulator repo](https://github.com/PhantoomDev/bt3-dolphin) to implement rollback netcode for Dragon Ball Z: Budokai Tenkaichi 3 (BT3) through reverse engineering. 
+
+This repository focuses on reverse engineering Dragon Ball Z: Budokai Tenkaichi 3 and implementing necessary code modifications for rollback netcode support.
+
+The goal is to implement a split-screen battle interface with game state saving, game logic, rendering and sound call separation hooks to allow for rollback implementation while the modded dolphin handles input and networking.
 
 ## Open Knowledge, No Gatekeeping
 
@@ -42,14 +46,17 @@ The goal is to learn and grow together. Not everyone starts as an expert documen
 
 ### Game Modifications
 - Utilizing unused "Dragon Net Battle" section as entry point for code injection
-- Implementing custom interface for netplay functionality
+- Implementing interface for netplay battle (duel interface with rollback hooks)
 - Separating core components:
   - Game logic
   - Rendering pipeline
   - Audio callback system
 - Creating hooks for Dolphin emulator interaction
 
-### Dolphin Implementation
+### Dolphin Implementation*
+
+*On the other repo**
+
 Based on Slippi architecture:
 - Virtual input device system for netplay opponent
 - Input buffer management
@@ -66,49 +73,33 @@ Based on Slippi architecture:
 
 ### Phase 1: Reverse Engineering
 - [ ] Game Logic Analysis
-  - Identify core game mechanics and systems
-  - Map data structures and memory layouts
-  - Document game state management
-- [ ] Code Injection Research
-  - [ ] Analyze "Dragon Net Battle" section
-  - [ ] Identify safe injection points
-  - [ ] Document memory constraints
+  - [ ] Identify core game mechanics and systems
+  - [ ] Map data structures and memory layouts
+  - [ ] Document game state management
 - [ ] Component Separation (if they're already separated we can skip this)
   - [ ] Isolate game logic
   - [ ] Separate rendering pipeline
   - [ ] Extract audio callback system
 - [ ] Non-Deterministic Elements Resolution
-  - Handle random elements (ki blasts, scatter shots)
-  - Address character-specific RNG (Mr. Satan's Blast 2)
-  - Document and mitigate seed-dependent behaviors
+  - [ ] Handle random elements (ki blasts, scatter shots)
+  - [ ] Address character-specific RNG (Mr. Satan's Blast 2)
+  - [ ] Document and mitigate seed-dependent behaviors
 
 ### Phase 2: Game Modification
 - [ ] Code Injection Implementation
-  - [ ] Create custom interface in "Dragon Net Battle" section
   - [ ] Implement hook system for Dolphin interaction
+  - [ ] Implement state synchronization hooks
   - [ ] Develop state management interface
 - [ ] Component Restructuring
   - [ ] Implement separated game logic calls
   - [ ] Create rendering pipeline hooks
   - [ ] Develop audio callback management
-- [ ] Interface Development
-  - [ ] Create network battle UI
-  - [ ] Implement state synchronization hooks
-  - [ ] Develop debug interface
+
 
 ### Phase 3: Dolphin Integration
-- [ ] Virtual Input System
-  - [ ] Implement Slippi-style input device
-  - [ ] Create input buffer management
-  - [ ] Develop network input handling
-- [ ] Rollback System
-  - [ ] Implement state saving/loading
-  - [ ] Create prediction system
-  - [ ] Develop frame rollback mechanism
-- [ ] Network Implementation
-  - [ ] Create peer-to-peer connection system
-  - [ ] Implement input synchronization
-  - [ ] Develop delay adjustment system
+- [ ] Verify rollback game logic stability
+  - [ ] RNG based moves calculated correctly when re-simulated
+  - [ ] Sound call gets called consistently
 
 ### Phase 4: Polish & Testing
 - [ ] Alpha Testing
@@ -119,6 +110,45 @@ Based on Slippi architecture:
   - [ ] Optimize state saving
   - [ ] Improve rollback performance
   - [ ] Minimize network overhead
+
+### Prototype rough outline
+```
+## Modded Dolphin Side:
+1. Basic UI
+   - Simple dropdown menus for characters/stage selection
+   - Host/Join buttons
+
+2. Session Flow
+   Host: (p2p protocol)
+   - Pick both chars + stage
+   - Wait for player
+
+   Join: (join with p2p code)
+   - Auto run ping test -> calculate delay/rollback frames
+   - Pick own char
+
+3. When both ready:
+   - Map selections to game's character/stage IDs
+   - Send to game's duel mode function
+   - Jump to combat prepare state
+
+4. During Fight:
+   Normal case:
+   - Run game normally when predictions correct
+
+   When desync/rollback needed:
+   Ideal: 
+   - Run only necessary game logic (requires combat game state to recalculate)
+   - Recalculate with new predicted inputs
+   - Render current frame
+   - Resume
+
+   Fast prototype fallback:
+   - Brute force replay entire game state from wrong input to current frame
+   - Resume
+
+Done!
+```
 
 ## Technical Considerations
 
@@ -137,28 +167,18 @@ The rollback system will:
 5. Recalculate game logic on input mismatch
 6. Update renders after state rollback
 
-### Virtual Input System
-- Input buffer size: TBD
-- Input delay handling
-- Network packet format
-- State synchronization protocol
-
-### Performance Targets
-- Frame delay: <2 frames (out of 30 fps)
-- Rollback window: Up to 7 frames
-- State save size: TBD
-- Memory overhead: TBD
 
 ## Current Status
 - Reverse engineering: In Progress
 - Code injection research: Not Started
-- Dolphin modification: Planning Phase
+- Dolphin modification: In Progress
 - Netplay implementation: Not Started
+
+
+## Future consideration
+- Training mode through the use of code injection
 
 ## Contributing
 Contributions are welcome! Please feel free to submit pull requests or open issues for discussion.
 
-## Resources
-- [GGPO Documentation](https://github.com/pond3r/ggpo)
-- [Dolphin Development Guide](https://dolphin-emu.org/docs/guides/)
-- [Slippi Project Reference](https://github.com/project-slippi)
+Follow **[here](/CONTRIBUTING.md)** for pull request format

@@ -1,0 +1,12 @@
+80008d10 - ?menu_transition_val_clamp
+
+802065ac - ?set_menu_transition_flag
+
+800b3834 - ???? Called every frame in character select menu
+
+800b73d0 - ?load P1 number of character
+!!800043e0 - trying this to brute force jump instruction from save state here (instruction not static, must arrive here after breakpoint in memory watch)
+
+800b7488 - ??Character_loader
+
+800374d8
