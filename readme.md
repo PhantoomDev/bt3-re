@@ -33,7 +33,7 @@ Based on Slippi architecture:
 
 ## Project Roadmap
 
-[Get Started here](Instructions/Tutorial Reverse Engineering and Debugging for DBZ BT3 (Wii).docx)
+[Get Started here](Instructions)
 
 ### Phase 1: Reverse Engineering
 - [ ] Game Logic Analysis
