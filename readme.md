@@ -115,7 +115,7 @@ Based on Slippi architecture:
 ## Modded Dolphin Side:
 1. Basic UI
    - Simple dropdown menus for characters/stage selection
-   - Host/Join buttons
+   - Host/Join
 
 2. Session Flow
    Host: (p2p protocol)
@@ -151,8 +151,7 @@ Done!
 
 ## Technical Considerations
 
-### Code Injection
-- Memory constraints in "Dragon Net Battle" section
+### Code Injection?
 - Safe hook points identification
 - State preservation requirements
 - Interface communication protocol
@@ -169,7 +168,7 @@ The rollback system will:
 
 ## Current Status
 - Reverse engineering: In Progress
-- Code injection research: Not Started
+- Code injection research?: Not Started
 - Dolphin modification: In Progress
 - Netplay implementation: Not Started
 
