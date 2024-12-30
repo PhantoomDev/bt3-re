@@ -1,0 +1,167 @@
+{
+    "watchList": [
+        {
+            "expanded": true,
+            "groupEntries": [
+                {
+                    "groupEntries": [
+                        {
+                            "address": "92334CAC",
+                            "baseIndex": 0,
+                            "label": "Ki",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        },
+                        {
+                            "address": "92334CB0",
+                            "baseIndex": 0,
+                            "label": "Ki Max",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        },
+                        {
+                            "address": "92334CBC",
+                            "baseIndex": 0,
+                            "label": "Sparking Ki",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        },
+                        {
+                            "address": "92334CA0",
+                            "baseIndex": 0,
+                            "label": "HP",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        },
+                        {
+                            "address": "92334CA4",
+                            "baseIndex": 0,
+                            "label": "HP Max",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        },
+                        {
+                            "address": "92334CB4",
+                            "baseIndex": 0,
+                            "label": "Blast Stocks",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        },
+                        {
+                            "address": "92334CB8",
+                            "baseIndex": 0,
+                            "label": "Blast Stocks Max",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        },
+                        {
+                            "address": "92334CC8",
+                            "baseIndex": 0,
+                            "label": "Can Charge Ki?",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        },
+                        {
+                            "address": "92334C04",
+                            "baseIndex": 0,
+                            "label": "Character State",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        },
+                        {
+                            "address": "92334C0C",
+                            "baseIndex": 0,
+                            "label": "Character State",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        },
+                        {
+                            "address": "92334BFA",
+                            "baseIndex": 0,
+                            "label": "Direction input Y",
+                            "typeIndex": 0,
+                            "unsigned": false
+                        },
+                        {
+                            "address": "92334BFB",
+                            "baseIndex": 0,
+                            "label": "Direction Input X",
+                            "typeIndex": 0,
+                            "unsigned": false
+                        },
+                        {
+                            "address": "92334C20",
+                            "baseIndex": 0,
+                            "label": "??Idle time",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        },
+                        {
+                            "address": "92334C24",
+                            "baseIndex": 0,
+                            "label": "??idle time",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        }
+                    ],
+                    "groupName": "P1"
+                }
+            ],
+            "groupName": "Value"
+        },
+        {
+            "expanded": true,
+            "groupEntries": [
+                {
+                    "expanded": true,
+                    "groupEntries": [
+                        {
+                            "address": "923428D8",
+                            "baseIndex": 0,
+                            "label": "Ki Display",
+                            "typeIndex": 2,
+                            "unsigned": true
+                        },
+                        {
+                            "address": "923428E0",
+                            "baseIndex": 0,
+                            "label": "Ki Display Red",
+                            "typeIndex": 2,
+                            "unsigned": true
+                        },
+                        {
+                            "address": "92342890",
+                            "baseIndex": 0,
+                            "label": "HP Display",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        },
+                        {
+                            "address": "92342888",
+                            "baseIndex": 0,
+                            "label": "HP Display Red",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        }
+                    ],
+                    "groupName": "P1"
+                }
+            ],
+            "groupName": "Display"
+        },
+        {
+            "address": "923428DC",
+            "baseIndex": 0,
+            "label": "??P2 damage dealt",
+            "typeIndex": 2,
+            "unsigned": false
+        },
+        {
+            "address": "923428E4",
+            "baseIndex": 0,
+            "label": "??P2 damage dealt",
+            "typeIndex": 2,
+            "unsigned": false
+        }
+    ]
+}
