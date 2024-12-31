@@ -1,0 +1,2 @@
+0x92334bf8 - 92334c67: P1 input and basic character state
+0x92333b00 - 92333bd0: P1 pos?
