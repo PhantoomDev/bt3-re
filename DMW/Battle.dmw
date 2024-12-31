@@ -4,10 +4,44 @@
             "expanded": true,
             "groupEntries": [
                 {
+                    "address": "92333574",
+                    "baseIndex": 0,
+                    "label": "Start Timer",
+                    "typeIndex": 2,
+                    "unsigned": true
+                },
+                {
+                    "address": "9233EA50",
+                    "baseIndex": 0,
+                    "label": "Start Timer",
+                    "typeIndex": 2,
+                    "unsigned": true
+                },
+                {
+                    "address": "92346528",
+                    "baseIndex": 0,
+                    "label": "Fight Start Timer",
+                    "typeIndex": 2,
+                    "unsigned": true
+                },
+                {
+                    "address": "92346538",
+                    "baseIndex": 0,
+                    "label": "Fight Start Timer",
+                    "typeIndex": 2,
+                    "unsigned": true
+                },
+                {
                     "expanded": true,
                     "groupEntries": [
                         {
-                            "expanded": true,
+                            "address": "92334BE8",
+                            "baseIndex": 0,
+                            "label": "?Start of P1 Battle actor",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        },
+                        {
                             "groupEntries": [
                                 {
                                     "address": "92334C04",
@@ -108,11 +142,95 @@
                                     "unsigned": false
                                 },
                                 {
+                                    "address": "92335028",
+                                    "baseIndex": 0,
+                                    "label": "No label",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "92335030",
+                                    "baseIndex": 0,
+                                    "label": "No label",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "9233501C",
+                                    "baseIndex": 0,
+                                    "label": "Rush Attack Number",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "92335034",
+                                    "baseIndex": 0,
+                                    "label": "Charge Attack",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "92335038",
+                                    "baseIndex": 0,
+                                    "label": "Charge Smash",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "92335040",
+                                    "baseIndex": 0,
+                                    "label": "Charge Smash Lv2",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "9233503C",
+                                    "baseIndex": 0,
+                                    "label": "Combo momentum",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "923350A0",
+                                    "baseIndex": 0,
+                                    "label": "Ki blast shot",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "923350A4",
+                                    "baseIndex": 0,
+                                    "label": "Ki blast timer",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "923350A8",
+                                    "baseIndex": 0,
+                                    "label": "?Ki Blast Hand",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
                                     "address": "923350C0",
                                     "baseIndex": 0,
                                     "label": "After Image",
                                     "typeIndex": 2,
                                     "unsigned": true
+                                },
+                                {
+                                    "address": "92335100",
+                                    "baseIndex": 0,
+                                    "label": "No label",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "923350C8",
+                                    "baseIndex": 0,
+                                    "label": "After Image Strike Timer",
+                                    "typeIndex": 2,
+                                    "unsigned": false
                                 },
                                 {
                                     "address": "923350C4",
@@ -122,9 +240,37 @@
                                     "unsigned": true
                                 },
                                 {
+                                    "address": "923350D8",
+                                    "baseIndex": 0,
+                                    "label": "False Courage Timer",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "923350F8",
+                                    "baseIndex": 0,
+                                    "label": "After Image Strike",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
                                     "address": "923350FC",
                                     "baseIndex": 0,
-                                    "label": "Full buff",
+                                    "label": "buff",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "92335030",
+                                    "baseIndex": 0,
+                                    "label": "No label",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "92335028",
+                                    "baseIndex": 0,
+                                    "label": "No label",
                                     "typeIndex": 2,
                                     "unsigned": false
                                 },
@@ -202,7 +348,6 @@
                             "unsigned": false
                         },
                         {
-                            "expanded": true,
                             "groupEntries": [
                                 {
                                     "address": "90F99F68",
@@ -299,7 +444,6 @@
                             "groupName": "position? not zero when scene loaded"
                         },
                         {
-                            "expanded": true,
                             "groupEntries": [
                                 {
                                     "address": "92334CA0",
@@ -384,12 +528,18 @@
                                     "label": "Blast U use count",
                                     "typeIndex": 2,
                                     "unsigned": false
+                                },
+                                {
+                                    "address": "92334D00",
+                                    "baseIndex": 0,
+                                    "label": "Taunted",
+                                    "typeIndex": 2,
+                                    "unsigned": false
                                 }
                             ],
                             "groupName": "Character 0"
                         },
                         {
-                            "expanded": true,
                             "groupEntries": [
                                 {
                                     "address": "92334D44",
@@ -460,6 +610,26 @@
                         }
                     ],
                     "groupName": "P1"
+                },
+                {
+                    "expanded": true,
+                    "groupEntries": [
+                        {
+                            "address": "92336CA4",
+                            "baseIndex": 0,
+                            "label": "Character State",
+                            "typeIndex": 2,
+                            "unsigned": true
+                        },
+                        {
+                            "address": "92336CAC",
+                            "baseIndex": 0,
+                            "label": "Character State",
+                            "typeIndex": 2,
+                            "unsigned": true
+                        }
+                    ],
+                    "groupName": "P2"
                 }
             ],
             "groupName": "Value"
