@@ -7,162 +7,300 @@
                     "expanded": true,
                     "groupEntries": [
                         {
-                            "address": "92334C04",
-                            "baseIndex": 0,
-                            "label": "Character State",
-                            "typeIndex": 2,
-                            "unsigned": false
+                            "expanded": true,
+                            "groupEntries": [
+                                {
+                                    "address": "92334C04",
+                                    "baseIndex": 0,
+                                    "label": "Character State",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "92334C0C",
+                                    "baseIndex": 0,
+                                    "label": "Character State",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "92334C38",
+                                    "baseIndex": 0,
+                                    "label": "?Character ground state",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "92334C58",
+                                    "baseIndex": 0,
+                                    "label": "Switch Gauge",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "92334C5C",
+                                    "baseIndex": 0,
+                                    "label": "P1 Switch character",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "92334BFA",
+                                    "baseIndex": 0,
+                                    "label": "Direction input Y",
+                                    "typeIndex": 0,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "92334BFB",
+                                    "baseIndex": 0,
+                                    "label": "Direction Input X",
+                                    "typeIndex": 0,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "92334C20",
+                                    "baseIndex": 0,
+                                    "label": "Character state hold time",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "92334C24",
+                                    "baseIndex": 0,
+                                    "label": "Character state hold time",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "92334BFC",
+                                    "baseIndex": 0,
+                                    "label": "Check sum composite",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "92334BFC",
+                                    "baseIndex": 0,
+                                    "label": "Face button input checksum",
+                                    "typeIndex": 0,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "92334BFD",
+                                    "baseIndex": 0,
+                                    "label": "Holding down a face button",
+                                    "typeIndex": 0,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "92334BFE",
+                                    "baseIndex": 0,
+                                    "label": "Shoulder button checksum",
+                                    "typeIndex": 0,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "92334BFF",
+                                    "baseIndex": 0,
+                                    "label": "Face button + dir input checksum",
+                                    "typeIndex": 0,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "923350C0",
+                                    "baseIndex": 0,
+                                    "label": "After Image",
+                                    "typeIndex": 2,
+                                    "unsigned": true
+                                },
+                                {
+                                    "address": "923350C4",
+                                    "baseIndex": 0,
+                                    "label": "Wild sense",
+                                    "typeIndex": 2,
+                                    "unsigned": true
+                                },
+                                {
+                                    "address": "923350FC",
+                                    "baseIndex": 0,
+                                    "label": "Full buff",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "923350F8",
+                                    "baseIndex": 0,
+                                    "label": "False courage",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "92333B00",
+                                    "baseIndex": 0,
+                                    "label": "???pos xy *7 including below",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "92333B04",
+                                    "baseIndex": 0,
+                                    "label": "???pos z *7 including below",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "92333B08",
+                                    "baseIndex": 0,
+                                    "label": "???pos xy *7 including below",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "92333B74",
+                                    "baseIndex": 0,
+                                    "label": "???pos xy *7 including below",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                }
+                            ],
+                            "groupName": "Player state"
                         },
                         {
-                            "address": "92334C0C",
+                            "address": "92333830",
                             "baseIndex": 0,
-                            "label": "Character State",
-                            "typeIndex": 2,
-                            "unsigned": false
-                        },
-                        {
-                            "address": "92334C38",
-                            "baseIndex": 0,
-                            "label": "?Character ground state",
-                            "typeIndex": 2,
-                            "unsigned": false
-                        },
-                        {
-                            "address": "92334C5C",
-                            "baseIndex": 0,
-                            "label": "P1 Switch character",
-                            "typeIndex": 2,
-                            "unsigned": false
-                        },
-                        {
-                            "address": "92334BFA",
-                            "baseIndex": 0,
-                            "label": "Direction input Y",
-                            "typeIndex": 0,
-                            "unsigned": false
-                        },
-                        {
-                            "address": "92334BFB",
-                            "baseIndex": 0,
-                            "label": "Direction Input X",
-                            "typeIndex": 0,
-                            "unsigned": false
-                        },
-                        {
-                            "address": "92334C20",
-                            "baseIndex": 0,
-                            "label": "Character state hold time",
-                            "typeIndex": 2,
-                            "unsigned": false
-                        },
-                        {
-                            "address": "92334C24",
-                            "baseIndex": 0,
-                            "label": "Character state hold time",
-                            "typeIndex": 2,
-                            "unsigned": false
-                        },
-                        {
-                            "address": "92334BFC",
-                            "baseIndex": 0,
-                            "label": "Check sum composite",
-                            "typeIndex": 2,
-                            "unsigned": false
-                        },
-                        {
-                            "address": "92334BFC",
-                            "baseIndex": 0,
-                            "label": "Face button input checksum",
-                            "typeIndex": 0,
-                            "unsigned": false
-                        },
-                        {
-                            "address": "92334BFD",
-                            "baseIndex": 0,
-                            "label": "Holding down a face button",
-                            "typeIndex": 0,
-                            "unsigned": false
-                        },
-                        {
-                            "address": "92334BFE",
-                            "baseIndex": 0,
-                            "label": "Shoulder button checksum",
-                            "typeIndex": 0,
-                            "unsigned": false
-                        },
-                        {
-                            "address": "92334BFF",
-                            "baseIndex": 0,
-                            "label": "Face button + dir input checksum",
-                            "typeIndex": 0,
-                            "unsigned": false
-                        },
-                        {
-                            "address": "92333B00",
-                            "baseIndex": 0,
-                            "label": "???pos",
-                            "typeIndex": 2,
-                            "unsigned": false
-                        },
-                        {
-                            "address": "92335CE0",
-                            "baseIndex": 0,
-                            "label": "???pos",
-                            "typeIndex": 2,
-                            "unsigned": false
-                        },
-                        {
-                            "address": "9233F1E0",
-                            "baseIndex": 0,
-                            "label": "???pos",
-                            "typeIndex": 2,
-                            "unsigned": false
-                        },
-                        {
-                            "address": "92333B58",
-                            "baseIndex": 0,
-                            "label": "???pos",
+                            "label": "??pos xy",
                             "typeIndex": 2,
                             "unsigned": true
                         },
                         {
-                            "address": "92333B64",
+                            "address": "92333834",
                             "baseIndex": 0,
-                            "label": "???pos",
+                            "label": "??pos z",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
-                            "address": "92333B50",
+                            "address": "92333838",
                             "baseIndex": 0,
-                            "label": "???pos",
+                            "label": "??pos xy",
                             "typeIndex": 2,
-                            "unsigned": true
+                            "unsigned": false
+                        },
+                        {
+                            "address": "92333844",
+                            "baseIndex": 0,
+                            "label": "??pos xy",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        },
+                        {
+                            "address": "92333854",
+                            "baseIndex": 0,
+                            "label": "Floating pos",
+                            "typeIndex": 2,
+                            "unsigned": false
                         },
                         {
                             "expanded": true,
                             "groupEntries": [
                                 {
-                                    "address": "92334CAC",
+                                    "address": "90F99F68",
                                     "baseIndex": 0,
-                                    "label": "Ki",
+                                    "label": "No label",
                                     "typeIndex": 2,
-                                    "unsigned": false
+                                    "unsigned": true
                                 },
                                 {
-                                    "address": "92334CB0",
+                                    "address": "90F9A558",
                                     "baseIndex": 0,
-                                    "label": "Ki Max",
+                                    "label": "No label",
                                     "typeIndex": 2,
-                                    "unsigned": false
+                                    "unsigned": true
                                 },
                                 {
-                                    "address": "92334CBC",
+                                    "address": "90FC4518",
                                     "baseIndex": 0,
-                                    "label": "Sparking Ki",
+                                    "label": "No label",
                                     "typeIndex": 2,
-                                    "unsigned": false
+                                    "unsigned": true
                                 },
+                                {
+                                    "address": "92333838",
+                                    "baseIndex": 0,
+                                    "label": "No label",
+                                    "typeIndex": 2,
+                                    "unsigned": true
+                                },
+                                {
+                                    "address": "923338E8",
+                                    "baseIndex": 0,
+                                    "label": "No label",
+                                    "typeIndex": 2,
+                                    "unsigned": true
+                                },
+                                {
+                                    "address": "92333B18",
+                                    "baseIndex": 0,
+                                    "label": "No label",
+                                    "typeIndex": 2,
+                                    "unsigned": true
+                                },
+                                {
+                                    "address": "92333B28",
+                                    "baseIndex": 0,
+                                    "label": "No label",
+                                    "typeIndex": 2,
+                                    "unsigned": true
+                                },
+                                {
+                                    "address": "92333B38",
+                                    "baseIndex": 0,
+                                    "label": "No label",
+                                    "typeIndex": 2,
+                                    "unsigned": true
+                                },
+                                {
+                                    "address": "92333B48",
+                                    "baseIndex": 0,
+                                    "label": "No label",
+                                    "typeIndex": 2,
+                                    "unsigned": true
+                                },
+                                {
+                                    "address": "92333B58",
+                                    "baseIndex": 0,
+                                    "label": "No label",
+                                    "typeIndex": 2,
+                                    "unsigned": true
+                                },
+                                {
+                                    "address": "92333B68",
+                                    "baseIndex": 0,
+                                    "label": "No label",
+                                    "typeIndex": 2,
+                                    "unsigned": true
+                                },
+                                {
+                                    "address": "92333C78",
+                                    "baseIndex": 0,
+                                    "label": "No label",
+                                    "typeIndex": 2,
+                                    "unsigned": true
+                                },
+                                {
+                                    "address": "92333C88",
+                                    "baseIndex": 0,
+                                    "label": "No label",
+                                    "typeIndex": 2,
+                                    "unsigned": true
+                                }
+                            ],
+                            "groupName": "position? not zero when scene loaded"
+                        },
+                        {
+                            "expanded": true,
+                            "groupEntries": [
                                 {
                                     "address": "92334CA0",
                                     "baseIndex": 0,
@@ -174,6 +312,20 @@
                                     "address": "92334CA4",
                                     "baseIndex": 0,
                                     "label": "HP Max",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "92334CAC",
+                                    "baseIndex": 0,
+                                    "label": "Ki",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "92334CB0",
+                                    "baseIndex": 0,
+                                    "label": "Ki Max",
                                     "typeIndex": 2,
                                     "unsigned": false
                                 },
@@ -190,9 +342,121 @@
                                     "label": "Blast Stocks Max",
                                     "typeIndex": 2,
                                     "unsigned": false
+                                },
+                                {
+                                    "address": "92334CBC",
+                                    "baseIndex": 0,
+                                    "label": "Sparking Ki",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "92334CD8",
+                                    "baseIndex": 0,
+                                    "label": "Blast 1-1 use count",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "92334CDC",
+                                    "baseIndex": 0,
+                                    "label": "Blast 1-2 use count",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "92334CE0",
+                                    "baseIndex": 0,
+                                    "label": "Blast 2-1 use count",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "92334CE4",
+                                    "baseIndex": 0,
+                                    "label": "Blast 2-2 use count",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "92334CE8",
+                                    "baseIndex": 0,
+                                    "label": "Blast U use count",
+                                    "typeIndex": 2,
+                                    "unsigned": false
                                 }
                             ],
                             "groupName": "Character 0"
+                        },
+                        {
+                            "expanded": true,
+                            "groupEntries": [
+                                {
+                                    "address": "92334D44",
+                                    "baseIndex": 0,
+                                    "label": "HP",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "92334D48",
+                                    "baseIndex": 0,
+                                    "label": "HP Max",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "92334D50",
+                                    "baseIndex": 0,
+                                    "label": "Ki",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "92334D54",
+                                    "baseIndex": 0,
+                                    "label": "Ki Max",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "92334D58",
+                                    "baseIndex": 0,
+                                    "label": "Blast Stock",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "92334D5C",
+                                    "baseIndex": 0,
+                                    "label": "Blast Stock Max",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                },
+                                {
+                                    "address": "92334D60",
+                                    "baseIndex": 0,
+                                    "label": "Sparking Ki",
+                                    "typeIndex": 2,
+                                    "unsigned": false
+                                }
+                            ],
+                            "groupName": "Character 1"
+                        },
+                        {
+                            "groupEntries": [
+                            ],
+                            "groupName": "Character 2"
+                        },
+                        {
+                            "groupEntries": [
+                            ],
+                            "groupName": "Character 3"
+                        },
+                        {
+                            "groupEntries": [
+                            ],
+                            "groupName": "Character 4"
                         }
                     ],
                     "groupName": "P1"
@@ -214,13 +478,6 @@
                             "unsigned": true
                         },
                         {
-                            "address": "923428D0",
-                            "baseIndex": 0,
-                            "label": "Blast Stock Display",
-                            "typeIndex": 2,
-                            "unsigned": false
-                        },
-                        {
                             "address": "923428E0",
                             "baseIndex": 0,
                             "label": "Ki Display Red",
@@ -238,6 +495,13 @@
                             "address": "92342888",
                             "baseIndex": 0,
                             "label": "HP Display Red",
+                            "typeIndex": 2,
+                            "unsigned": false
+                        },
+                        {
+                            "address": "923428D0",
+                            "baseIndex": 0,
+                            "label": "Blast Stock Display",
                             "typeIndex": 2,
                             "unsigned": false
                         }

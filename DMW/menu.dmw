@@ -204,70 +204,70 @@
                         {
                             "address": "912C6234",
                             "baseIndex": 1,
-                            "label": "P1 Char 1",
+                            "label": "P1 Char 0",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
                             "address": "912C6230",
                             "baseIndex": 0,
-                            "label": "P1 Char 1 Color",
+                            "label": "P1 Char 0 Color",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
                             "address": "912C6264",
                             "baseIndex": 0,
-                            "label": "P1 Char 2",
+                            "label": "P1 Char 1",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
                             "address": "912C6260",
                             "baseIndex": 0,
-                            "label": "P1 Char 2 Color",
+                            "label": "P1 Char 1 Color",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
                             "address": "912C6294",
                             "baseIndex": 0,
-                            "label": "P1 Char 3",
+                            "label": "P1 Char 2",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
                             "address": "912C6290",
                             "baseIndex": 0,
-                            "label": "P1 Char 3 Color",
+                            "label": "P1 Char 2 Color",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
                             "address": "912C62C4",
                             "baseIndex": 0,
-                            "label": "P1 Char 4",
+                            "label": "P1 Char 3",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
                             "address": "912C62C0",
                             "baseIndex": 0,
-                            "label": "P1 Char 4 Color",
+                            "label": "P1 Char 3 Color",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
                             "address": "912C62F4",
                             "baseIndex": 0,
-                            "label": "P1 Char 5",
+                            "label": "P1 Char 4",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
                             "address": "912C62F0",
                             "baseIndex": 0,
-                            "label": "P1 Char 5 Color",
+                            "label": "P1 Char 4 Color",
                             "typeIndex": 2,
                             "unsigned": false
                         },
@@ -427,70 +427,70 @@
                         {
                             "address": "912C64BC",
                             "baseIndex": 0,
-                            "label": "P2 Char 1",
+                            "label": "P2 Char 0",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
                             "address": "912C64B8",
                             "baseIndex": 0,
-                            "label": "P2 Char 1 Color",
+                            "label": "P2 Char 0 Color",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
                             "address": "912C64EC",
                             "baseIndex": 0,
-                            "label": "P2 Char 2",
+                            "label": "P2 Char 1",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
                             "address": "912C64E8",
                             "baseIndex": 0,
-                            "label": "P2 Char 2 Color",
+                            "label": "P2 Char 1 Color",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
                             "address": "912C651C",
                             "baseIndex": 0,
-                            "label": "P2 Char 3",
+                            "label": "P2 Char 2",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
                             "address": "912C6518",
                             "baseIndex": 0,
-                            "label": "P2 Char 3 Color",
+                            "label": "P2 Char 2 Color",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
                             "address": "912C654C",
                             "baseIndex": 0,
-                            "label": "P2 Char 4",
+                            "label": "P2 Char 3",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
                             "address": "912C6548",
                             "baseIndex": 0,
-                            "label": "P2 Char 4 Color",
+                            "label": "P2 Char 3 Color",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
                             "address": "912C657C",
                             "baseIndex": 0,
-                            "label": "P2 Char 5",
+                            "label": "P2 Char 4",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
                             "address": "912C6578",
                             "baseIndex": 0,
-                            "label": "P2 Char 5 Color",
+                            "label": "P2 Char 4 Color",
                             "typeIndex": 2,
                             "unsigned": false
                         },
@@ -544,70 +544,70 @@
                         {
                             "address": "803CF784",
                             "baseIndex": 0,
-                            "label": "P1 Char 1 ID",
+                            "label": "P1 Char 0 ID",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
                             "address": "803CF788",
                             "baseIndex": 0,
-                            "label": "P1 Char 1 color",
+                            "label": "P1 Char 0 color",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
                             "address": "803CF7E8",
                             "baseIndex": 0,
-                            "label": "P1 Char 2 ID",
+                            "label": "P1 Char 1 ID",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
                             "address": "803CF7EC",
                             "baseIndex": 0,
-                            "label": "P1 Char 2 color",
+                            "label": "P1 Char 1 color",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
                             "address": "803CF84C",
                             "baseIndex": 0,
-                            "label": "P1 Char 3 ID",
+                            "label": "P1 Char 2 ID",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
                             "address": "803CF850",
                             "baseIndex": 0,
-                            "label": "P1 Char 3 color",
+                            "label": "P1 Char 2 color",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
                             "address": "803CF8B0",
                             "baseIndex": 0,
-                            "label": "P1 Char 4 ID",
+                            "label": "P1 Char 3 ID",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
                             "address": "803CF8B4",
                             "baseIndex": 0,
-                            "label": "P1 Char 4 color",
+                            "label": "P1 Char 3 color",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
                             "address": "803CF914",
                             "baseIndex": 0,
-                            "label": "P1 Char 5 ID",
+                            "label": "P1 Char 4 ID",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
                             "address": "803CF918",
                             "baseIndex": 0,
-                            "label": "P1 Char 5 color",
+                            "label": "P1 Char 4 color",
                             "typeIndex": 2,
                             "unsigned": false
                         }
@@ -627,70 +627,70 @@
                         {
                             "address": "803CF9F4",
                             "baseIndex": 0,
-                            "label": "P2 Char 1 ID",
+                            "label": "P2 Char 0 ID",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
                             "address": "803CF9F8",
                             "baseIndex": 0,
-                            "label": "P2 Char 1 color",
+                            "label": "P2 Char 0 color",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
                             "address": "803CFA58",
                             "baseIndex": 0,
-                            "label": "P2 Char 2 ID",
+                            "label": "P2 Char 1 ID",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
                             "address": "803CFA5C",
                             "baseIndex": 0,
-                            "label": "P2 Char 2 color",
+                            "label": "P2 Char 1 color",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
                             "address": "803CFABC",
                             "baseIndex": 0,
-                            "label": "P2 Char 3 ID",
+                            "label": "P2 Char 2 ID",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
                             "address": "803CFAC0",
                             "baseIndex": 0,
-                            "label": "P2 Char 3 color",
+                            "label": "P2 Char 2 color",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
                             "address": "803CFB20",
                             "baseIndex": 0,
-                            "label": "P2 Char 4 ID",
+                            "label": "P2 Char 3 ID",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
                             "address": "803CFB24",
                             "baseIndex": 0,
-                            "label": "P2 Char 4 color",
+                            "label": "P2 Char 3 color",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
                             "address": "803CFB84",
                             "baseIndex": 0,
-                            "label": "P2 Char 5 ID",
+                            "label": "P2 Char 4 ID",
                             "typeIndex": 2,
                             "unsigned": false
                         },
                         {
                             "address": "803CFB88",
                             "baseIndex": 0,
-                            "label": "P2 Char 5 color",
+                            "label": "P2 Char 4 color",
                             "typeIndex": 2,
                             "unsigned": false
                         }
